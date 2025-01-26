@@ -5,7 +5,7 @@
         <title>OpenCyb3r Leaderboard</title>
         <style>
             body { 
-                background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+                background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #00c6ff);
                 background-size: 400% 400%;
                 animation: gradient 15s ease infinite;
                 font-family: Arial, sans-serif; 
@@ -16,6 +16,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: flex-start;
+                overflow: hidden;
             }
 
             @keyframes gradient {
@@ -30,7 +31,7 @@
                 }
             }
 
-            table { border-collapse: collapse; width: 80%; margin-top: 20px; }
+            table { border-collapse: collapse; width: 80%; margin-top: 20px; z-index: 1; position: relative; }
             th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
             th { background-color: #f2f2f2; }
             .avatar {
@@ -44,6 +45,8 @@
                 color: white;
                 text-align: center;
                 margin-top: 20px;
+                z-index: 1;
+                position: relative;
             }
         </style>
     </head>
